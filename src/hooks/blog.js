@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getBlogs } from '../services/blog.js';
 
-export async function useBlogs() {
+export function useBlogs() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
